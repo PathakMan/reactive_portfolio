@@ -8,7 +8,18 @@
     <link rel="stylesheet" href="media.css">
 </head>
 
+
+
 <body>
+    <video id="background-video" muted loop autoplay>
+        <source src="./asset/livebackground.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        const video = document.getElementById('background-video');
+        video.addEventListener('ended', () => playVideo(video));
+    </script>
+
     <nav id="desktop-nav">
         <div class="logo">Manthan Pathak</div>
         <div>

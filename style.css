@@ -5,8 +5,23 @@
 * {
     margin: 0;
     padding: 0;
-
 }
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 10;
+}
+
+.fading {
+    opacity: 0;
+    transition: opacity 1s;
+    }
 
 body {
     font-family: "Poppins", sans-serif;
@@ -75,6 +90,7 @@ a:hover {
 .hamburger-menu {
     position: relative;
     display: inline-block;
+    z-index: 1;
 }
 
 .hamburger-icon{
@@ -94,7 +110,7 @@ a:hover {
 }
 
 .menu-links {
-    position: absolute;
+    position: relative;
     top: 100%;
     right: 0%;
     background-color: white;
@@ -102,6 +118,7 @@ a:hover {
     max-height: 0;
     overflow: hidden;
     transition: all 0.3 ease-in-out;
+    z-index: 1;
 }
 
 .menu-links {
@@ -278,6 +295,8 @@ color: white;
 
 #about{
     position: relative;
+    margin-top: 0;
+    z-index: 1;
 }
 
 .about-containers{
@@ -310,10 +329,10 @@ color: white;
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: rgb(255, 255, 255, 0.5);
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border-color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -332,6 +351,7 @@ height: 80%;
 
 #Experience {
     position: relative;
+    z-index: 1;
 }
 
 .experience-sub-title {
@@ -382,7 +402,7 @@ article .icon{
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background: (250, 250, 250);
+    background: rgb(255, 255, 255, 0.5);
     margin: 2rem auto;
     padding: 0.5rem;
 }
