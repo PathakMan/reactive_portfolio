@@ -11,9 +11,7 @@
 
 
 <body>
-    <video id="background-video" muted loop autoplay>
-        <source src="./asset/livebackground.mp4" type="video/mp4">
-    </video>
+    <img src="./asset/Back-img.jpg" id="background-image">
 
     <script>
         const video = document.getElementById('background-video');
@@ -52,7 +50,7 @@
     
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./asset/Manthan's photo.jpeg" alt="Manthan's profile pic">
+            <img src="./asset/Manthan's pic.png" alt="Manthan's profile pic" class="pic">
         </div>
 
         <div class="section__text">
@@ -82,25 +80,29 @@
                     <div class="details-container">
                         <img src="./asset/Experience.png" alt="Experience icon" class="icon">
                         <h3>Experience</h3>
-                        <p>0-1 years <br>Frontend Development</p>
+                        <p class="box-text">0-1 years <br>Frontend Development</p>
                     </div>
                     <div class="details-container" >
                         <img src="./asset/Education.png" alt="Education icon" class="icon">
                         <h3>Education</h3>
-                        <p>B.Tech. Bachelors Degree</p>
+                        <p class="box-text">B.Tech. Bachelors Degree</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Leveraging a strong design sense and in-depth knowledge of UX 
-                       principles, I bridge the gap between complex layouts and clean,<br> 
-                       efficient code using HTML, CSS, and JavaScript. My commitment to 
-                       continuous learning ensures I stay abreast of the latest front-end 
-                       advancements, resulting in websites that are not only functional 
-                       but also visually compelling and user-centric.</p>
+                    <p>As a passionate and dedicated junior frontend developer, I specialize in creating visually appealing and user-friendly 
+                        web interfaces. With a strong foundation in HTML, CSS, and JavaScript, I am adept at transforming design mockups into 
+                        fully functional websites that offer seamless user experiences. My attention to detail and commitment to staying updated 
+                        with the latest industry trends ensure that my work not only meets but exceeds modern web standards. Eager to collaborate 
+                        with dynamic teams, I am constantly honing my skills to contribute effectively to innovative projects and deliver exceptional 
+                        digital solutions.
+                    </p>
+                </div>
+                <div class="btn3">
+                <button class="btn-color-3" onclick="window.open('./asset/recommendation letter.pdf')">Recommendation Letter</button>
                 </div>
             </div>
         </div>
-        <img src="./asset/d-arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Experience'">
+        <img src="./asset/arrown-d.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Experience'">
     </section>
 
     <section id="Experience">
@@ -115,7 +117,7 @@
                             <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>HTML</h3>
-                                <p>Intermediate</p>
+                                <p class="box-text">Intermediate</p>
                             </div>
                         </article>
 
@@ -123,7 +125,7 @@
                             <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>CSS</h3>
-                                <p>Intermediate</p>
+                                <p class="box-text">Intermediate</p>
                             </div>
                         </article>
 
@@ -131,7 +133,7 @@
                             <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>Python</h3>
-                                <p>Beginner</p>
+                                <p class="box-text">Beginner</p>
                             </div>
                         </article>
 
@@ -139,7 +141,7 @@
                             <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>JAVA</h3>
-                                <p>Basic</p>
+                                <p class="box-text">Basic</p>
                             </div>
                         </article>
 
@@ -147,7 +149,7 @@
                             <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>JavaScript</h3>
-                                <p>Beginner</p>
+                                <p class="box-text">Beginner</p>
                             </div>
                         </article>
 
@@ -155,7 +157,7 @@
                             <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>SQL</h3>
-                                <p>Intermediate</p>
+                                <p class="box-text">Intermediate</p>
                             </div>
                         </article>
 
@@ -163,7 +165,7 @@
                             <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
                             <div>
                                 <h3>Swift</h3>
-                                <p>Beginner</p>
+                                <p class="box-text">Beginner</p>
                             </div>
                         </article>
                     </div>
@@ -171,7 +173,7 @@
             </div>
         </div>
 
-        <img src="./asset/d-arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+        <img src="./asset/arrown-d.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
 
     </section>
 
@@ -181,11 +183,11 @@
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./asset/Email.png" alt="Email icon" class="icon contact-icon" onclick="location.href='mailto:pathakmanthan55@gmail.com'">
-                <p><a href="mailto:pathakmanthan55@gmail.com"></a>pathakmanthan55@gmail.com</p>
+                <p class="box-text">pathakmanthan55@gmail.com</p>
             </div>
             <div class="contact-info-container">
                 <img src="./asset/LinkedIn.png" alt="LinkedIn icon" class="icon contact-icon" onclick="location.href='https://www.linkedin.com/in/manthanpathak/'">
-                <p><a href="https://www.linkedin.com/in/manthanpathak/" ></a>manthanpathak</p>
+                <p class="box-text">manthanpathak</p>
             </div>
         </div>
     </section>
