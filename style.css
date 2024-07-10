@@ -212,17 +212,6 @@ transition: opacity 0.3s ease-in-out;
     flex: 10;
   }
   
-  @keyframes blink {
-    0% {
-      border-color: #333;
-    }
-    50% {
-      border-color: transparent;
-    }
-    100% {
-      border-color: #333;
-    }
-  }
 
  /* Profile section */
 
@@ -256,6 +245,7 @@ transition: opacity 0.3s ease-in-out;
     color: #FAF9F6;
     align-self: center;
     text-align: center;
+    width: 500px;
 }
 
 .section__text p {
@@ -272,7 +262,7 @@ transition: opacity 0.3s ease-in-out;
 
 .section__text__p2 {
 
-    font-size: 1.75rem;
+    font-size: 1.50rem;
     margin-bottom: 1rem;
     animation: blink 1s infinite;
 }
@@ -280,13 +270,13 @@ transition: opacity 0.3s ease-in-out;
 @keyframes section__text__p2 {
       0% {
     opacity: 1;
-  }
+}
   50% {
     opacity: 0;
-  }
+}
   100% {
     opacity: 1;
-  }
+}
 }
 
 .title{
