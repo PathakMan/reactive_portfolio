@@ -6,9 +6,8 @@
     <title>Manthan's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <link rel="icon" type="icon" href="./asset/website-icon.png">
 </head>
-
-
 
 <body>
     <img src="./asset/Back-img.jpg" id="background-image">
@@ -19,7 +18,9 @@
     </script>
 
     <nav id="desktop-nav">
-        <div class="logo">Manthan Pathak</div>
+        <div class="logo">
+            Manthan Pathak
+        </div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a>
@@ -28,24 +29,26 @@
                 </li>
             </ul>
         </div>
-        
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">Manthan Pathak</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
+        <div class="logo">
+            Manthan Pathak
+        </div>
+        
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
-            </div>
+        </div>
 
-            <div class="menu-links">
+        <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a>
                 <li><a href="#Experience" onclick="toggleMenu()">Experience</a>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a>
-            </div>
         </div>
+    </div>
     </nav>
     
     <section id="profile">
@@ -54,13 +57,17 @@
         </div>
 
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
+            <p class="section__text__p1">
+                Hello, I'm
+            </p>
 
-             <div class="name-title">
+            <div class="name-title">
                 <span id="name"></span>
             </div>
             
-            <span class="section__text__p2">Front-end Developer</span>
+            <span class="section__text__p2">
+                Front-end Developer
+            </span>
 
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./asset/Manthan_Pathak.pdf')">Download CV</button>
@@ -74,10 +81,16 @@
     </section>
 
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+
+        <p class="section__text__p1">
+            Get To Know More
+        </p>
+        <h1 class="title">
+            About Me
+        </h1>
         <div class="section-container">
-            <div class="section__pic-container">
+
+            <div class="section__pic-container-1">
                 <img src="./asset/about.png" alt="about-pic" class="about-pic">
             </div>
             <div class="about-details-container">
@@ -107,35 +120,46 @@
                 </div>
             </div>
         </div>
+
         <img src="./asset/arrown-d.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Experience'">
     </section>
 
     <section id="Experience">
-        <p class="section__text__p1">Explore More About my</p>
+
+        <p class="section__text__p1">
+            Explore More About my
+        </p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="work-details">
-                    <h2 class="work-head">I am working with DMV RTech. :</h2>
+                    <h2 class="work-head">
+                        I am working with DMV RTech. :
+                    </h2>
                     <div class="text-container">
-                        <p>As a Front-End Developer Intern at DMV RTech., I have the opportunity 
-                        to enhance my skills in developing responsive and visually appealing user 
-                        interfaces using HTML, CSS, and JavaScript. I collaborate closely with UX/UI 
-                        designers and back-end developers to create seamless and efficient web applications. 
-                        My responsibilities include optimizing website performance, ensuring cross-browser 
-                        compatibility, and implementing best practices for code efficiency. I also engage 
-                        in testing and debugging processes to maintain high functionality standards. Utilizing 
-                        Git for version control and maintaining thorough documentation are integral parts of my 
-                        role. This hands-on experience is significantly deepening my understanding of front-end 
-                        development and preparing me for future professional challenges in the field.</p>
+                        <p id="paragraph">As a Front-End Developer Intern at DMV RTech, 
+                            I am honing my skills in creating responsive and visually 
+                            appealing user interfaces using HTML, CSS, and JavaScript. 
+                            I work closely with UX/UI designers and back-end developers 
+                            to build seamless and efficient web applications. My role involves 
+                            optimizing website performance, ensuring cross-browser compatibility, 
+                            and implementing best practices for code efficiency. I also participate 
+                            in testing and debugging to maintain high functionality standards. Utilizing 
+                            Git for version control and maintaining thorough documentation are key 
+                            aspects of my responsibilities. This hands-on experience is significantly 
+                            enhancing my understanding of front-end development and preparing me for 
+                            future professional challenges in the field.
+                        </p>
                     </div>
                 </div>
 
                 <div class="detail-container">
-                    <h2 class="experience-sub-title">Development Skills</h2>
+                    <h2 class="experience-sub-title">
+                        Development Skills
+                    </h2>
                     <div class="article-container">
                         <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
                             <div>
                                 <h3>HTML</h3>
                                 <p class="box-text">Intermediate</p>
@@ -143,7 +167,7 @@
                         </article>
 
                         <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
                             <div>
                                 <h3>CSS</h3>
                                 <p class="box-text">Intermediate</p>
@@ -151,7 +175,7 @@
                         </article>
 
                         <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
                             <div>
                                 <h3>Python</h3>
                                 <p class="box-text">Beginner</p>
@@ -159,7 +183,7 @@
                         </article>
 
                         <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
                             <div>
                                 <h3>JAVA</h3>
                                 <p class="box-text">Basic</p>
@@ -167,7 +191,7 @@
                         </article>
 
                         <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
                             <div>
                                 <h3>JavaScript</h3>
                                 <p class="box-text">Beginner</p>
@@ -175,7 +199,7 @@
                         </article>
 
                         <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
                             <div>
                                 <h3>SQL</h3>
                                 <p class="box-text">Intermediate</p>
@@ -183,7 +207,7 @@
                         </article>
 
                         <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon">
+                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
                             <div>
                                 <h3>Swift</h3>
                                 <p class="box-text">Beginner</p>
@@ -195,21 +219,28 @@
         </div>
 
         <img src="./asset/arrown-d.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
-
     </section>
 
     <section id="contact">
-        <h1 class="contact-title">Get In Touch</h1>
+
+        <h1 class="contact-title">
+            Get In Touch
+        </h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./asset/Email.png" alt="Email icon" class="icon contact-icon" onclick="location.href='mailto:pathakmanthan55@gmail.com'">
-                <p class="box-text">pathakmanthan55@gmail.com</p>
+                <p class="box-text">
+                    pathakmanthan55@gmail.com
+                </p>
             </div>
             <div class="contact-info-container">
                 <img src="./asset/LinkedIn.png" alt="LinkedIn icon" class="icon contact-icon" onclick="location.href='https://www.linkedin.com/in/manthanpathak/'">
-                <p class="box-text">manthanpathak</p>
+                <p class="box-text">
+                    manthanpathak
+                </p>
             </div>
         </div>
+
     </section>
     
     <footer>
@@ -219,12 +250,12 @@
                     <li><a href="#about">About</a>
                     <li><a href="#Experience">Experience</a>
                     <li><a href="#contact">Contact</a>
-                    </li>
                 </ul>
             </div>
         </nav>
         <p>Copyright &#169; 2024 Manthan Pathak All Right Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html
