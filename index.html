@@ -10,12 +10,8 @@
 </head>
 
 <body>
-    <img src="./asset/Back-img.jpg" id="background-image">
 
-    <script>
-        const video = document.getElementById('background-video');
-        video.addEventListener('ended', () => playVideo(video));
-    </script>
+    <img src="./asset/Back-img.jpg" id="background-image">
 
     <nav id="desktop-nav">
         <div class="logo">
@@ -24,6 +20,7 @@
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a>
+                <li><a href="#projects">Projects</a>
                 <li><a href="#Experience">Experience</a>
                 <li><a href="#contact">Contact</a>
                 </li>
@@ -45,6 +42,7 @@
 
         <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a>
+                <li><a href="#projects">Projects</a>
                 <li><a href="#Experience" onclick="toggleMenu()">Experience</a>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a>
         </div>
@@ -70,7 +68,7 @@
             </span>
 
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./asset/Manthan_Pathak.pdf')">Download CV</button>
+                <button class="btn btn-color-2" onclick="window.open('./asset/Manthan-Pathak.pdf')">Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact</button>
             </div>
             <div id="socials-container"> 
@@ -121,9 +119,57 @@
             </div>
         </div>
 
-        <img src="./asset/arrown-d.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Experience'">
+        <img src="./asset/arrown-d.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
 
+    <section id="projects">
+        <p class="section__text__p1">Browse my recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="experience-details-container">
+            <div class="projects-containers">
+            <div class="projects-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-1.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project: To-Do List</h2>
+                <div class="btn-container">
+                    <a href="https://tasktrail-pm.netlify.app/" target="_blank">
+                        <button class="btn-color-2 project-btn">
+                        Live Demo
+                        </button>
+                    </a>
+                    <a href="https://github.com/PathakMan/To-Do_List" target="_blank">
+                        <button class="btn-color-2 project-btn">
+                        GitHub
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="projects-container color-container">
+                <div class="article-container">
+                    <img src="./asset/project-2.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project: Rock, Paper & Scissors</h2>
+                <div class="btn-container">
+                    <a href="https://rockpaperscissor-tp.netlify.app/" target="_blank">
+                        <button class="btn-color-2 project-btn">
+                        Live Demo
+                        </button>
+                    </a>
+                    <a href="https://github.com/PathakMan/Rock-Paper-Scissor-Game" target="_blank">
+                        <button class="btn-color-2 project-btn">
+                        GitHub
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <img src="./asset/arrown-d.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Experience'">
+    </section>
     <section id="Experience">
 
         <p class="section__text__p1">
@@ -247,6 +293,16 @@
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
+                    <li><a href="#desktop-nav">Profile</a>
+                    <li><a href="#about">About</a>
+                    <li><a href="#Experience">Experience</a>
+                    <li><a href="#contact">Contact</a>
+                </ul>
+            </div>
+
+            <div class="hamb-nav-links">
+                <ul class="ham-nav-links">
+                    <li><a href="#hamburger-nav">Profile</a>
                     <li><a href="#about">About</a>
                     <li><a href="#Experience">Experience</a>
                     <li><a href="#contact">Contact</a>
