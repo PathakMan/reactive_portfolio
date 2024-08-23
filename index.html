@@ -1,319 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manthan's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
-    <link rel="icon" type="icon" href="./asset/website-icon.png">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="icon" type="icon" href="./asset/website-icon.png" />
+  </head>
 
-<body>
-
-    <img src="./asset/Back-img.jpg" id="background-image">
+  <body>
+    <img src="./asset/Back-img.jpg" id="background-image" />
 
     <nav id="desktop-nav">
-        <div class="logo">
-            Manthan Pathak
-        </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a>
-                <li><a href="#projects">Projects</a>
-                <li><a href="#Experience">Experience</a>
-                <li><a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+      <div class="logo">Manthan Pathak</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo">
-            Manthan Pathak
-        </div>
-        
-    <div class="hamburger-menu">
+      <div class="logo">Manthan Pathak</div>
+
+      <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
 
         <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a>
-                <li><a href="#projects">Projects</a>
-                <li><a href="#Experience" onclick="toggleMenu()">Experience</a>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
-    </div>
+      </div>
     </nav>
-    
+
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./asset/Manthan's pic.png" alt="Manthan's profile pic" class="pic">
+      <div class="section__pic-container">
+        <img
+          src="./asset/Manthan's pic.png"
+          alt="Manthan's profile pic"
+          class="pic"
+        />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+
+        <div class="name-title">
+          <span id="name"></span>
         </div>
 
-        <div class="section__text">
-            <p class="section__text__p1">
-                Hello, I'm
-            </p>
+        <span class="section__text__p2"> Front-end Developer </span>
 
-            <div class="name-title">
-                <span id="name"></span>
-            </div>
-            
-            <span class="section__text__p2">
-                Front-end Developer
-            </span>
-
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./asset/Manthan-Pathak.pdf')">Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href ='./#contact'">Contact</button>
-            </div>
-            <div id="socials-container"> 
-                <img src="./asset/LinkedIn.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/manthanpathak/'">
-                <img src="./asset/Github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/PathakMan'">
-            </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./asset/Manthan-Pathak.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href ='./#contact'">
+            Contact
+          </button>
         </div>
+        <div id="socials-container">
+          <img
+            src="./asset/LinkedIn.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/manthanpathak/'"
+          />
+          <img
+            src="./asset/Github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/PathakMan'"
+          />
+        </div>
+      </div>
     </section>
 
     <section id="about">
-
-        <p class="section__text__p1">
-            Get To Know More
-        </p>
-        <h1 class="title">
-            About Me
-        </h1>
-        <div class="section-container">
-
-            <div class="section__pic-container-1">
-                <img src="./asset/about.png" alt="about-pic" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./asset/Experience.png" alt="Experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p class="box-text">0-1 year <br>Frontend Development</p>
-                    </div>
-                    <div class="details-container" >
-                        <img src="./asset/Education.png" alt="Education icon" class="icon">
-                        <h3>Education</h3>
-                        <p class="box-text">B.Tech. Bachelors Degree</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>As a passionate and dedicated junior frontend developer, I specialize in creating visually appealing and user-friendly 
-                        web interfaces. With a strong foundation in HTML, CSS, and JavaScript, I am adept at transforming design mockups into 
-                        fully functional websites that offer seamless user experiences. My attention to detail and commitment to staying updated 
-                        with the latest industry trends ensure that my work not only meets but exceeds modern web standards. Eager to collaborate 
-                        with dynamic teams, I am constantly honing my skills to contribute effectively to innovative projects and deliver exceptional 
-                        digital solutions.
-                    </p>
-                </div>
-                <div class="btn3">
-                <button class="btn-color-3" onclick="window.open('./asset/recommendation letter.pdf')">Recommendation Letter</button>
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container-1">
+          <img src="./asset/about.png" alt="about-pic" class="about-pic" />
         </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./asset/Experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p class="box-text">0-1 year <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./asset/Education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p class="box-text">B.Tech. Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a passionate and dedicated junior frontend developer, I
+              specialize in creating visually appealing and user-friendly web
+              interfaces. With a strong foundation in HTML, CSS, and JavaScript,
+              I am adept at transforming design mockups into fully functional
+              websites that offer seamless user experiences. My attention to
+              detail and commitment to staying updated with the latest industry
+              trends ensure that my work not only meets but exceeds modern web
+              standards. Eager to collaborate with dynamic teams, I am
+              constantly honing my skills to contribute effectively to
+              innovative projects and deliver exceptional digital solutions.
+            </p>
+          </div>
+          <div class="btn3">
+            <button
+              class="btn-color-3"
+              onclick="window.open('./asset/recommendation letter.pdf')"
+            >
+              Recommendation Letter
+            </button>
+          </div>
+        </div>
+      </div>
 
-        <img src="./asset/arrown-d.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+      <img
+        src="./asset/arrown-d.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
 
     <section id="projects">
-        <p class="section__text__p1">Browse my recent</p>
-        <h1 class="title">Projects</h1>
+      <p class="section__text__p1">Browse my recent</p>
+      <h1 class="title">Projects</h1>
 
-        <div class="experience-details-container">
-            <div class="projects-containers">
-            <div class="projects-container color-container">
-                <div class="article-container">
-                    <img src="./asset/project-1.png" alt="Project 1" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Project: To-Do List</h2>
-                <div class="btn-container">
-                    <a href="https://tasktrail-pm.netlify.app/" target="_blank">
-                        <button class="btn-color-2 project-btn">
-                        Live Demo
-                        </button>
-                    </a>
-                    <a href="https://github.com/PathakMan/To-Do_List" target="_blank">
-                        <button class="btn-color-2 project-btn">
-                        GitHub
-                        </button>
-                    </a>
-                </div>
+      <div class="experience-details-container">
+        <div class="projects-containers">
+          <div class="projects-container color-container">
+            <div class="article-container">
+              <img
+                src="./asset/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
             </div>
-
-            <div class="projects-container color-container">
-                <div class="article-container">
-                    <img src="./asset/project-2.png" alt="Project 2" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Project: Rock, Paper & Scissors</h2>
-                <div class="btn-container">
-                    <a href="https://rockpaperscissor-tp.netlify.app/" target="_blank">
-                        <button class="btn-color-2 project-btn">
-                        Live Demo
-                        </button>
-                    </a>
-                    <a href="https://github.com/PathakMan/Rock-Paper-Scissor-Game" target="_blank">
-                        <button class="btn-color-2 project-btn">
-                        GitHub
-                        </button>
-                    </a>
-                </div>
+            <h2 class="experience-sub-title project-title">To-Do List
+            </h2>
+            <div class="btn-container">
+              <a href="https://tasktrail-pm.netlify.app/" target="_blank">
+                <button class="btn-color-2 project-btn">Live Demo</button>
+              </a>
+              <a href="https://github.com/PathakMan/To-Do_List" target="_blank">
+                <button class="btn-color-2 project-btn">GitHub</button>
+              </a>
             </div>
-        </div>
-        </div>
+          </div>
 
-        <img src="./asset/arrown-d.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Experience'">
+          <div class="projects-container color-container">
+            <div class="article-container">
+              <img
+                src="./asset/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Project: Rock, Paper & Scissors
+            </h2>
+            <div class="btn-container">
+              <a
+                href="https://rockpaperscissor-tp.netlify.app/"
+                target="_blank"
+              >
+                <button class="btn-color-2 project-btn">Live Demo</button>
+              </a>
+              <a
+                href="https://github.com/PathakMan/Rock-Paper-Scissor-Game"
+                target="_blank"
+              >
+                <button class="btn-color-2 project-btn">GitHub</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./asset/arrown-d.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Experience'"
+      />
     </section>
     <section id="Experience">
-
-        <p class="section__text__p1">
-            Explore More About my
-        </p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="work-details">
-                    <h2 class="work-head">
-                        I am working with DMV RTech. :
-                    </h2>
-                    <div class="text-container">
-                        <p id="paragraph">As a Front-End Developer Intern at DMV RTech, 
-                            I am honing my skills in creating responsive and visually 
-                            appealing user interfaces using HTML, CSS, and JavaScript. 
-                            I work closely with UX/UI designers and back-end developers 
-                            to build seamless and efficient web applications. My role involves 
-                            optimizing website performance, ensuring cross-browser compatibility, 
-                            and implementing best practices for code efficiency. I also participate 
-                            in testing and debugging to maintain high functionality standards. Utilizing 
-                            Git for version control and maintaining thorough documentation are key 
-                            aspects of my responsibilities. This hands-on experience is significantly 
-                            enhancing my understanding of front-end development and preparing me for 
-                            future professional challenges in the field.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="detail-container">
-                    <h2 class="experience-sub-title">
-                        Development Skills
-                    </h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
-                            <div>
-                                <h3>HTML</h3>
-                                <p class="box-text">Intermediate</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
-                            <div>
-                                <h3>CSS</h3>
-                                <p class="box-text">Intermediate</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
-                            <div>
-                                <h3>Python</h3>
-                                <p class="box-text">Beginner</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
-                            <div>
-                                <h3>JAVA</h3>
-                                <p class="box-text">Basic</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p class="box-text">Beginner</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
-                            <div>
-                                <h3>SQL</h3>
-                                <p class="box-text">Intermediate</p>
-                            </div>
-                        </article>
-
-                        <article>
-                            <img src="./asset/checkmark.png" alt="Experience icon" class="icon-e">
-                            <div>
-                                <h3>Swift</h3>
-                                <p class="box-text">Beginner</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+      <p class="section__text__p1">Explore More About my</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="work-details">
+            <h2 class="work-head">I am working with DMV RTech. :</h2>
+            <div class="text-container">
+              <p id="paragraph">
+                As a Front-End Developer Intern at DMV RTech, I am honing my
+                skills in creating responsive and visually appealing user
+                interfaces using HTML, CSS, and JavaScript. I work closely with
+                UX/UI designers and back-end developers to build seamless and
+                efficient web applications. My role involves optimizing website
+                performance, ensuring cross-browser compatibility, and
+                implementing best practices for code efficiency. I also
+                participate in testing and debugging to maintain high
+                functionality standards. Utilizing Git for version control and
+                maintaining thorough documentation are key aspects of my
+                responsibilities. This hands-on experience is significantly
+                enhancing my understanding of front-end development and
+                preparing me for future professional challenges in the field.
+              </p>
             </div>
-        </div>
+          </div>
 
-        <img src="./asset/arrown-d.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+          <div class="detail-container">
+            <h2 class="experience-sub-title">Development Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="Experience icon"
+                  class="icon-e"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p class="box-text">Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="Experience icon"
+                  class="icon-e"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p class="box-text">Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="Experience icon"
+                  class="icon-e"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p class="box-text">Beginner</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="Experience icon"
+                  class="icon-e"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                  <p class="box-text">Basic</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="Experience icon"
+                  class="icon-e"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p class="box-text">Beginner</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="Experience icon"
+                  class="icon-e"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p class="box-text">Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./asset/checkmark.png"
+                  alt="Experience icon"
+                  class="icon-e"
+                />
+                <div>
+                  <h3>Swift</h3>
+                  <p class="box-text">Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./asset/arrown-d.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
     </section>
 
     <section id="contact">
+      <h1 class="contact-title">Get In Touch</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./asset/Email.png"
+            alt="Email icon"
+            class="icon contact-icon"
+            onclick="location.href='mailto:pathakmanthan55@gmail.com'"
+          />
+          <p class="box-text">pathakmanthan55@gmail.com</p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./asset/LinkedIn.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+            onclick="location.href='https://www.linkedin.com/in/manthanpathak/'"
+          />
+          <p class="box-text">manthanpathak</p>
+        </div>
+      </div>
+    </section>
 
-        <h1 class="contact-title">
-            Get In Touch
-        </h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./asset/Email.png" alt="Email icon" class="icon contact-icon" onclick="location.href='mailto:pathakmanthan55@gmail.com'">
-                <p class="box-text">
-                    pathakmanthan55@gmail.com
-                </p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./asset/LinkedIn.png" alt="LinkedIn icon" class="icon contact-icon" onclick="location.href='https://www.linkedin.com/in/manthanpathak/'">
-                <p class="box-text">
-                    manthanpathak
-                </p>
-            </div>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#desktop-nav">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
 
-    </section>
-    
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#desktop-nav">Profile</a>
-                    <li><a href="#about">About</a>
-                    <li><a href="#projects">Projects</a>
-                    <li><a href="#Experience">Experience</a>
-                    <li><a href="#contact">Contact</a>
-                </ul>
-            </div>
-
-            <div class="hamb-nav-links">
-                <ul class="ham-nav-links">
-                    <li><a href="#hamburger-nav">Profile</a>
-                    <li><a href="#about">About</a>
-                    <li><a href="#projects">Projects</a>
-                    <li><a href="#Experience">Experience</a>
-                    <li><a href="#contact">Contact</a>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2024 Manthan Pathak All Right Reserved.</p>
+        <div class="hamb-nav-links">
+          <ul class="ham-nav-links">
+            <li><a href="#hamburger-nav">Profile</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Manthan Pathak All Right Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
-</html
+  </body>
+</html>
