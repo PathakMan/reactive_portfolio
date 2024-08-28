@@ -1,16 +1,14 @@
-console.log
+console.log;
 
 function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open")
-    icon.classList.toggle("open")
-
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
 }
 
-
-const nameElement = document.getElementById('name');
-const name = 'Manthan Pathak';
+const nameElement = document.getElementById("name");
+const name = "Manthan Pathak";
 let i = 0;
 
 function nameTitle() {
@@ -34,3 +32,7 @@ function erase() {
 }
 
 nameTitle(); // Start the animation
+
+const lastUpdatedDate = document.getElementById("last-updated-date");
+const currentDate = new Date();
+lastUpdatedDate.textContent = `This website was last updated on ${currentDate.toLocaleDateString()}`;

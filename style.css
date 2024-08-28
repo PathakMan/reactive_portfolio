@@ -322,20 +322,13 @@ section {
 .btn-color-1,
 .btn-color-2 {
   border: #faf9f6 0.1rem solid;
+  background-color: rgba(223, 223, 223, 0.808);
+  color: black;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
-}
-
-.btn-color-1 {
-  color: white;
-  background-color: transparent;
-}
-
-.btn-color-2 {
-  color: white;
 }
 
 .btn-color-2:hover {
@@ -347,10 +340,6 @@ section {
 .btn-color-1:hover {
   background-color: #faf9f6;
   color: black;
-}
-
-.btn-color-2 {
-  background: none;
 }
 
 .btn-container {
@@ -372,7 +361,7 @@ section {
   top: 25px;
 }
 
-.section__pic-container-1 img{
+.section__pic-container-1 img {
   height: 300px;
   width: 300px;
 }
@@ -439,16 +428,26 @@ section {
   border-radius: 2rem;
 }
 
+/* .icon-a {
+  cursor: pointer;
+  height: 2.5rem;
+  padding: 0.5rem 0.5rem;
+  transition: transform 0.3s;
+  margin-bottom: 1.39rem;
+  margin-top: 1rem;
+}
+
 .arrow {
   position: absolute;
-  right: 50%;
-  bottom: 2rem;
+  right: 48%;
+  bottom: 0;
   transition: transform 0.3s;
+  
 }
 
 .arrow:hover {
   transform: scale(1.08);
-}
+} */
 
 .details-container {
   padding: 1.5rem;
@@ -503,20 +502,27 @@ section {
   padding: 2rem;
   flex: 1;
   border-radius: 2rem;
-  background-color: #b0b0b0;
-  border: 0.1rem solid #ddd;
-  border-color: #f0f0f0;
+  background-color: rgb(176, 176, 176, 0.85);
+  border: rgb(53, 53, 53) 0.1rem solid;
   text-align: center;
-  margin: 1.5rem 5rem;
+  margin: 1.5rem 1.5rem;
   color: black;
   width: 300px;
   height: 400px;
 }
 
+.projects-container p {
+  justify-content: flex-end;
+  bottom: 0;
+  color: black;
+  cursor: default;
+}
+
 .project-img {
   border-radius: 2rem;
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  height: 80%;
+  border: rgb(53, 53, 53) 2px dotted;
 }
 
 .project-title {
@@ -543,6 +549,8 @@ section {
 #Experience {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-sub-title {
@@ -584,16 +592,17 @@ section {
 }
 
 .detail-container {
-  padding: 15px;
+  padding: 10px;
   flex: 2;
   display: block;
-  background: rgb(255, 255, 255, 0.5);
+  background: rgb(176, 176, 176, 0.85);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(0, 0, 0);
   text-align: center;
   color: black;
   margin: 25px;
+  margin-bottom: 35px;
 }
 
 .article-container {
@@ -680,4 +689,12 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+#last-updated {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 14px;
 }
